@@ -15,6 +15,26 @@ app.get('/about', (req, res) => {
   res.send('<h2>Soligin</h2>')
 })
 
+// take information and do what you need
+app.post('/register', (req, res) => {
+  res.sendStatus(201)
+})
+
+// update - all info need to modified
+app.put('/user/soligin', (req, res) => {
+  res.sendStatus(200)
+})
+
+// update - not all info needed to modified
+app.patch('/user/soligin', (req, res) => {
+  res.sendStatus(200)
+})
+
+// just delete thing
+app.delete('/user/soligin', (req, res) => {
+  res.sendStatus(200)
+})
+
 // listen server and log the port
 app.listen(port, () => {
   console.log(`Server running on port ${port}.`)
