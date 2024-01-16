@@ -38,7 +38,8 @@ app.get('/', (req, res) => {
 
   res.render('index.ejs', {
     day: today,
-    advice: "Let's write some code.",
+    advice: "<p>Let's get some juice.</p>",
+    fruits: ['Apple', 'Orange', 'Peach'],
   })
 })
 

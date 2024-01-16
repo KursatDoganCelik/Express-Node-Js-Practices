@@ -8,8 +8,14 @@
 </head>
 
 <body>
-  <h1>It's <%=day%>. <%=advice%>
-  </h1>
+  <h1>It's <%=day%>.</h1>
+  <%-advice%>
+    <% for( let index=0; index < fruits.length; index++ ) { %>
+      <li>
+        <%= fruits[index] %>
+      </li>
+      <% } %>
+        <%- include('footer.ejs') %>
 </body>
 
 </html>
